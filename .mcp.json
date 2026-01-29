@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "tapd_mcp_http": {
+      "type": "http",
+      "url": "http://mcp-idc.tapd.woa.com/mcp/",
+      "headers": {
+        "X-Tapd-Access-Token": "${CLAUDE_ENV_TAPD_API_KEY}"
+      }
+    },
+    "Figma": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp", "--figma-api-key=${CLAUDE_ENV_FIGMA_API_KEY}", "--stdio"]
+    },
+    "fast-filesystem": {
+      "command": "npx",
+      "args": ["-y", "fast-filesystem-mcp"]
+    },
+    "fetch": {
+      "command": "python",
+      "args": ["-m", "mcp_server_fetch"]
+    }
+  }
+}
