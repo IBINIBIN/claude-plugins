@@ -11,13 +11,9 @@
       "command": "npx",
       "args": ["-y", "figma-developer-mcp", "--figma-api-key=${CLAUDE_ENV_FIGMA_API_KEY}", "--stdio"]
     },
-    "fast-filesystem": {
+    "chrome-devtools": {
       "command": "npx",
-      "args": ["-y", "fast-filesystem-mcp"]
-    },
-    "fetch": {
-      "command": "python",
-      "args": ["-m", "mcp_server_fetch"]
+      "args": ["chrome-devtools-mcp@latest", "--autoConnect", "--usageStatistics=false", "----performanceCrux=false"]
     }
   }
 }

@@ -1,8 +1,14 @@
 {
   "name": "IBIN",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "IBIN",
-    "email": "ibin@qq.com"
-  }
+    "email": "ibin@qq.com",
+    "url": "https://github.com/IBINIBIN"
+  },
+  "commands": ["./custom/commands/special.md"],
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./mcp-config.json"
 }
