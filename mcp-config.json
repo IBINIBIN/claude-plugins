@@ -13,7 +13,7 @@
     },
     "chrome-devtools": {
       "command": "npx",
-      "args": ["chrome-devtools-mcp@latest", "--autoConnect", "--usageStatistics=false", "----performanceCrux=false"]
+      "args": ["chrome-devtools-mcp@latest", "--autoConnect", "--usageStatistics=false", "--performanceCrux=false"]
     }
   }
 }
