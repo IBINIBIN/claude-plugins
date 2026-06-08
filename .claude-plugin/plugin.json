@@ -6,6 +6,5 @@
     "email": "ibin@qq.com",
     "url": "https://github.com/IBINIBIN"
   },
-  "hooks": "./hooks/hooks.json",
   "mcpServers": "./mcp-config.json"
 }
