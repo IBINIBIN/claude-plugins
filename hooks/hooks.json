@@ -1,3 +1,26 @@
 {
-  "hooks": {}
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "case \"${IBIN_PLUGIN_CLAUDE_CODE_ENV_ALERT:-}\" in 1|true) bash \"$CLAUDE_PLUGIN_ROOT\"/hooks/alert.sh beep_select ;; esac"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "case \"${IBIN_PLUGIN_CLAUDE_CODE_ENV_ALERT:-}\" in 1|true) bash \"$CLAUDE_PLUGIN_ROOT\"/hooks/alert.sh beep_end ;; esac"
+          }
+        ]
+      }
+    ]
+  }
 }
