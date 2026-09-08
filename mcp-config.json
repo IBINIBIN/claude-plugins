@@ -1,11 +1,12 @@
 {
   "mcpServers": {
-    "tapd_mcp_http": {
-      "type": "http",
-      "url": "http://mcp-idc.tapd.woa.com/mcp/",
+    "tapd": {
       "headers": {
-        "X-Tapd-Access-Token": "${CLAUDE_ENV_TAPD_API_KEY}"
-      }
+        "X-Tapd-Access-Token": "${CLAUDE_ENV_TAPD_API_KEY}",
+        "X-Keep-Links": "true"
+      },
+      "type": "http",
+      "url": "https://mcpgw.knot.woa.com/tapd/"
     },
     "Figma": {
       "command": "npx",
